@@ -1,5 +1,5 @@
-import { Cart } from "../src/Cart";
-import { Product } from "../src/Product"
+import { Cart } from "../src/classes/Cart";
+import { Product } from "../src/classes/Product"
 
 describe('Cart', () => {
     test('Cart starts empty', () => {
