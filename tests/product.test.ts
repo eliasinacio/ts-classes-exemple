@@ -1,5 +1,5 @@
 import { Product } from "../src/classes/Product"
-import * as testFunctions from "../src/index"
+import * as main from "../src/index"
 import { productsDataBase } from "../src/data/products"
 
 describe('Product Class', () => {
@@ -33,16 +33,16 @@ describe('Product Class', () => {
     })
 })
 
-describe('Product Class', () => {
+describe('index.ts', () => {
     test('return false to a invalid ID - 99999', () => {
-        const product = testFunctions.getProduct(99999)
+        const product = main.getProduct(99999)
         const expectedValue = false
 
         expect(product).toEqual(expectedValue);
     })
 
     test('Get product with a valid ID - 11100', () => {
-        const product = testFunctions.getProduct(11100)
+        const product = main.getProduct(11100)
         const name = !!product ? product.name : false
 
         const expectedValue = 'Clean Code Book'

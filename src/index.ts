@@ -1,6 +1,5 @@
 import { Cart } from "./classes/Cart";
 import { productsDataBase } from "./data/products";
-import { Order } from "./classes/Order";
 import { Product } from "./classes/Product";
 
 export function getProduct (id: number) {
